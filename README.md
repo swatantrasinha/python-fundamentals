@@ -20,7 +20,8 @@
 
 ## Data Types   
 
-### Primitive data type   
+
+### Primitive data type - int,float,string    
 Python assumes the type of variables based on data types   
 
 ```python
@@ -36,12 +37,43 @@ amount=10.5
 >Python infers that amount is an **float** since its a decimal number
 
 
-
-
-
 ## writing python programs
 
-## input and output
+```python
+tax=0.06
+total= amount + amount*tax
+print(total) # 10.6
+
+amount=100
+total= amount + amount*tax
+print(total)  # 106.0
+```
+
+### Data Type conversion function   
+
+convert a float to an int
+>amount= int(10.6) # 10
+
+convert int to a float   
+>amount=float(10) # 10.0
+
+concatenate string
+
+```python
+hello="hello"
+name="sarah"
+greeting= hello + name
+print(greeting) # hellosarah
+```
+
+### python input function   
+
+```python
+my_name= input("what is your name \n")
+print("input name is " + my_name) # input name is swat sinha
+```
+
+
 
 
 
