@@ -26,6 +26,10 @@ this is normal text
 - item one
 - item two
 - item three
+
+  | column1-title | column2-title | column3-title |
+  | ---           | ---           | ---           |
+  | row-1-col-1   | row-1-col-2   | row-1-col-3   |
 </p>
 </details>
   
