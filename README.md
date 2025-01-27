@@ -73,6 +73,42 @@ my_name= input("what is your name \n")
 print("input name is " + my_name) # input name is swat sinha
 ```
 
+### decades calculator
+See below codes to understadnd type conversion:   
+<details>
+  <summary>Decade Calculator</summary>
+  <p>
+Take input from user and calculate how many decades old 
+    
+```python
+age= input("how old are you \n")
+decades= age/10  
+```
+
+>TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+
+```python
+age= int (input("how old are you \n")) # type 34
+decades= age/10  
+print("you are " + str(decades) + " decades old.") 
+# output - you are 3.4 decades old.
+```
+
+>But we we want output like "3 decades and 4 years old" then we need quotient and remainder values
+
+```python
+user_age= int (input("how old are you \n")) # type 34
+user_decades= user_age // 10
+user_years=   user_age % 10
+print("you are " + str(user_decades) + " decades and " + str(user_years) + " years old") 
+# output - you are 3 decades and 4 years old
+```
+
+  </p>
+</details>
+
+
 
 
 
