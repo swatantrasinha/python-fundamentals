@@ -3,31 +3,31 @@
 ---
  ## Chapter 01 - Introduction   
  
-<details>
-  <summary>Why Python ?</summary>
-  <p>
-      
-1. **Versatile** programming language.It can be used in :   
-  - Data Science
-  - Machine Learning
-  - Web Development
+  <details>
+    <summary>Why Python ?</summary>
+      <p>  
+        1. **Versatile** programming language.It can be used in :   
+          - Data Science
+          - Machine Learning
+          - Web Development
 
-2. Strong Community   
-  There is a package for everything
+        2. Strong Community   
+          There is a package for everything
 
-3. Easy to Learn   
-  - easy to read
-  - concise
-  - interpreted language
+        3. Easy to Learn   
+          - easy to read
+          - concise
+          - interpreted language
 
-  </p>
-</details>
+      </p>
+  </details>
 
 ---
  ## Chapter 02 - Explore Data Types   
  
  <details>
   <summary>Data Types </summary>
+  
   <p>
    Primitive data type - int,float,string   
    
