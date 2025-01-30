@@ -73,7 +73,7 @@ my_name= input("what is your name \n")
 print("input name is " + my_name) # input name is swat sinha
 ```
 
-### decades calculator
+
 See below codes to understadnd type conversion:   
 <details>
   <summary>Decade Calculator</summary>
