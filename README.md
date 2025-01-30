@@ -24,11 +24,11 @@
 </details>
 
 ---
-
-## Data Types   
-
-
-### Primitive data type - int,float,string    
+ ## Chapter 02 - Explore Data Types   
+ <details>
+  <summary>Why Python ?</summary>
+  <p>
+    ### Primitive data type - int,float,string    
 Python assumes the type of variables based on data types   
 
 ```python
@@ -114,6 +114,12 @@ print("you are " + str(user_decades) + " decades and " + str(user_years) + " yea
 
   </p>
 </details>
+
+  </p>
+ </details>
+   
+
+
 
 
 
