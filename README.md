@@ -25,10 +25,12 @@
 
 ---
  ## Chapter 02 - Explore Data Types   
+ 
  <details>
-  <summary>Why Python ?</summary>
+  <summary>Data Types </summary>
   <p>
-    ### Primitive data type - int,float,string    
+    ### Primitive data type - int,float,string   
+   
 Python assumes the type of variables based on data types   
 
 ```python
