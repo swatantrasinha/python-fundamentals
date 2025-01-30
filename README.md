@@ -29,7 +29,7 @@
  <details>
   <summary>Data Types </summary>
   <p>
-    ### Primitive data type - int,float,string   
+   Primitive data type - int,float,string   
    
 Python assumes the type of variables based on data types   
 
