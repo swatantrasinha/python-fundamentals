@@ -154,15 +154,21 @@ print("you are " + str(user_decades) + " decades and " + str(user_years) + " yea
   <p>
    
    ```python
-   temperature=70
+# if - elif - else
+
+temperature=55
 if temperature > 80 :
     print("Its too hot")
     print("Stay Inside")
 elif temperature <60:
-    print("Its not too cold")
+    print("Its too cold")
     print("Stay Inside")
 else :
     print("Enjoy the outdoors")
+# Output below: 
+#Its too cold
+#Stay Inside
+
 ```
 
   </p>
@@ -189,6 +195,7 @@ if temperature > 80 or temperature < 60:
     print("Stay Inside")
 else :
     print("Enjoy the outdoors")
+# Output : Stay Inside
 
 
 # combine 'if' with 'and'    
@@ -196,10 +203,10 @@ temperature=75
 forcaset='rainy'
 
 if temperature < 80 or forcaset != 'rainy':
-    print("Go Outside Inside")
+    print("Go Outside")
 else :
     print("Stay Inside")
-
+# Output : Go Outside
 
 # not if
 forcaset='rainy'
@@ -207,6 +214,7 @@ if not forcaset == 'rainy':
     print("Go Outside Inside")
 else :
     print("Stay Inside")
+# Output: Stay Inside
 
 # not boolean
 raining=True
@@ -214,6 +222,8 @@ if not raining:
     print("Go Outside")
 else:
     print("Stay Inside")
+# Output: Stay Inside
+
 ```
    
   </p>
