@@ -124,13 +124,44 @@ print("you are " + str(user_decades) + " decades and " + str(user_years) + " yea
  ## Chapter 03 - Conditionals and Import   
  
 <details>
-  <summary>Operators</summary>
+  <summary>Comparators</summary>
   <p>
-   1. equal to
-   >print(temp == 95)  # True
+   
+   1. equal to   
+      >print(temp == 95)  # True/False based on temp value   
 
-  2. less than
-  >print(temp < 95)  # False
+  2. less than   
+  >print(temp < 95)  # True/False based on temp value   
+
+  3. less than equal to   
+  >print(temp <= 95)  # True/False based on temp value   
+
+4. greater than   
+   >print(temp > 95)  # True/False based on temp value  
+
+5. greater than equal to   
+   >print(temp >= 95)  # True/False based on temp value   
+
+6. not equal to   
+   >print(temp != 95)  # True/False based on temp value   
+
+  </p>
+</details>
+
+<details>
+  <summary>if - elif - else</summary>
+  <p>
+   ```python
+   temperature=70
+if temperature > 80 :
+    print("Its too hot")
+    print("Stay Inside")
+elif temperature <60:
+    print("Its not too cold")
+    print("Stay Inside")
+else :
+    print("Enjoy the outdoors")
+   ```
   </p>
 </details>
 
