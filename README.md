@@ -200,9 +200,9 @@ else :
 
 # combine 'if' with 'and'    
 temperature=75  
-forcaset='rainy'
+forcaset='pleasant'
 
-if temperature < 80 or forcaset != 'rainy':
+if temperature < 80 and forcaset != 'rainy':
     print("Go Outside")
 else :
     print("Stay Inside")
