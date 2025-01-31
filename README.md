@@ -124,8 +124,13 @@ print("you are " + str(user_decades) + " decades and " + str(user_years) + " yea
  ## Chapter 03 - Conditionals and Import   
  
 <details>
-  <summary>Decade Calculator</summary>
+  <summary>Operators</summary>
   <p>
+   1. equal to
+   >print(temp == 95)  # True
+
+  2. less than
+  >print(temp < 95)  # False
   </p>
 </details>
 
