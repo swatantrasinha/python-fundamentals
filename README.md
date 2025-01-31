@@ -29,7 +29,7 @@
   <summary>Data Types </summary>
   
   <p>
-   Primitive data type - int,float,string   
+   Primitive data type - int, float, string, boolean   
    
 Python assumes the type of variables based on data types   
 
@@ -180,7 +180,41 @@ else :
    
    'and' , 'or' ->  combine multiple comparisons   
    'not' -> negate a comparison   
-   
+
+   ```python
+
+# combile 'if' with 'or'    
+temperature=85    
+if temperature > 80 or temperature < 60:
+    print("Stay Inside")
+else :
+    print("Enjoy the outdoors")
+
+
+# combine 'if' with 'and'    
+temperature=75  
+forcaset='rainy'
+
+if temperature < 80 or forcaset != 'rainy':
+    print("Go Outside Inside")
+else :
+    print("Stay Inside")
+
+
+# not if
+forcaset='rainy'
+if not forcaset == 'rainy':
+    print("Go Outside Inside")
+else :
+    print("Stay Inside")
+
+# not boolean
+raining=True
+if not raining:
+    print("Go Outside")
+else:
+    print("Stay Inside")
+```
    
   </p>
   </details>
