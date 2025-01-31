@@ -150,7 +150,9 @@ print("you are " + str(user_decades) + " decades and " + str(user_years) + " yea
 
 <details>
   <summary>if - elif - else</summary>
+ 
   <p>
+   
    ```python
    temperature=70
 if temperature > 80 :
@@ -161,9 +163,28 @@ elif temperature <60:
     print("Stay Inside")
 else :
     print("Enjoy the outdoors")
-   ```
+```
+
   </p>
 </details>
+
+
+<details>
+  <summary>Logical Operators</summary>
+  <p>
+   
+   1. and   
+   2. or   
+   3. not   
+
+   
+   'and' , 'or' ->  combine multiple comparisons   
+   'not' -> negate a comparison   
+   
+   
+  </p>
+  </details>
+
 
 
 
