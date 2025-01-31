@@ -235,7 +235,23 @@ else:
    When we install python in computer we get :
    - python interpreter: python's buildin functionality   
    - python standard library: we need something extra e.g math,datetime,random then we can import from this Python Standard Library   
-   [Link]([https://www.google.co.in/](https://docs.python.org/3/library/index.html) "Python Standard Linrary")
+   [Link]([https://www.google.co.in/](https://docs.python.org/3/library/index.html) "Python Standard Linrary")   
+
+   ```python
+import random
+
+guess = int(input("Guess the dice roll : \n "))
+print('user answered : ' + str(guess))
+
+roll= random.randint(1,6) # function will return a random number between 1 and 6
+print("the computer rolled a " + str(roll))
+
+if guess== roll:
+    print("Correct: you won !!!")
+else:
+    print("Wrong guess ... ")
+
+```
    
    
    
