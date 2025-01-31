@@ -232,10 +232,14 @@ else:
 <details>
   <summary>Import Python Module</summary>
   <p>
-   When we install python in computer we get :
-   - python interpreter: python's buildin functionality   
+   When we install python in computer we get :   
+
+   - python interpreter: python's built-in functionality   
+
    - python standard library: we need something extra e.g math,datetime,random then we can import from this Python Standard Library   
-   [Link]([https://www.google.co.in/](https://docs.python.org/3/library/index.html) "Python Standard Linrary")   
+  
+   [Python Standard Library Link](https://docs.python.org/3/library/index.html "Python Standard Linrary")   
+
 
    ```python
 import random
@@ -252,16 +256,11 @@ else:
     print("Wrong guess ... ")
 
 ```
-   
-   
-   
-   
-   
-   
   </p>
 </details>
 
-
+ ## Chapter 04 - Lists and Loops   
+ 
 
 
 
