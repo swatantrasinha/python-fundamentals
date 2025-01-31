@@ -229,7 +229,21 @@ else:
   </p>
   </details>
 
-
+<details>
+  <summary>Import Python Module</summary>
+  <p>
+   When we install python in computer we get :
+   - python interpreter: python's buildin functionality   
+   - python standard library: we need something extra e.g math,datetime,random then we can import from this Python Standard Library   
+   [Link]([https://www.google.co.in/](https://docs.python.org/3/library/index.html) "Python Standard Linrary")
+   
+   
+   
+   
+   
+   
+  </p>
+</details>
 
 
 
