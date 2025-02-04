@@ -318,11 +318,44 @@ if word in acronyms:
 else:
     print(word + " is not in the list")
    ```
-  
   </p>
  </details>
 
 
+ <details>
+  <summary> in-built function sum </summary>
+  <p>
+   
+ ```python
+myexpenses = [1,2,3,4,5]
+total= sum(myexpenses)
+print("total expense is : " , total) # total expense is :  15
+```
+
+</p>
+</details>
+
+
+ <details>
+  <summary> calculate sum using for loop and use of sep parameter in print </summary>
+  <p>
+
+```python
+
+expenses= [10.50, 8, 5, 15, 20, 5, 3]
+sum=0 # note: as a practice - we should npt keep variable name as some prefedined keyword
+for x in expenses:
+    sum= sum + x
+
+print("you spent $" , sum)   # you spent $ 66.5 -> space after $ is added by default 
+
+# sep parameter in print
+print("you spent $" , sum, sep='') # you spent $66.5
+print("you spent $" , sum, sep='---') # you spent $---66.5
+```
+
+</p>
+</details>
 
 
 
