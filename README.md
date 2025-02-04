@@ -309,14 +309,14 @@ del acronyms[3] # IndexError: list assignment index out of range
   <p>
    
    ```python
-   if 1 in [1,2,3,4,5]:
+if 1 in [1,2,3,4,5]:
     print("true")
     
-    word= "TBH"
-    if word in acronyms:
-     print(word + " is in the list")
-    else:
-     print(word + " is not in the list")
+word= "TBH"
+if word in acronyms:
+    print(word + " is in the list")
+else:
+    print(word + " is not in the list")
    ```
   
   </p>
