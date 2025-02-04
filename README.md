@@ -393,6 +393,44 @@ total= sum(expenses)
 print("You spent $", total, sep='')
 ```
 
+<details>
+  <summary> Demo: Loan Calculator</summary>
+  <p> 
+
+```python
+# get details of loan
+
+money_owed= float(input("how much money do you owe in dollars ? \n")) # $50,000
+
+apr= float(input("what is annual roi ? \n")) # 3%
+
+payment= float(input("how much you will pay off each month in dollars ? \n")) # $1000
+
+months= int(input("how many months do you want to see the results for ? \n")) # 54
+
+monthly_rate= apr/100/12
+
+for i in range(months):
+    # calculate interest to pay
+    interest_paid = money_owed * monthly_rate
+
+    # add in interest
+    money_owed= money_owed + interest_paid
+    
+    if(money_owed - payment <= 0):
+        print("last payment is ", money_owed)
+        print("you paid off the loan in ", i+1 , " months ")
+        break
+    
+    # make payment
+    money_owed= money_owed - payment
+
+    print("Paid : ", payment, "of which ", interest_paid, " was the interest", end=' ')
+    print("Now I owe ", money_owed)
+```
+</p>
+</details>
+
 </p>
 </details>
 
