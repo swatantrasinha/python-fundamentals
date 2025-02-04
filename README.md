@@ -361,6 +361,25 @@ print("you spent $" , sum, sep='---') # you spent $---66.5
  <details>
   <summary> loop with range </summary>
   <p>
+   syntax for range is below   
+   
+   ```python
+
+# range(num)  -> means 0 to num   
+# range(7) means -> 0 to 6 : 0,1,2,3,4,5,6      
+
+# range(start, stop, step)   
+# range(0,7,1) --> 0,1,2,3,4,5,6   
+
+# range(2,14,2) --> 2,4,6,8,10,12   
+  
+
+for i in range(2,14,2):
+    print(i)
+
+  ```
+  
+  we will now use range with for loop:
    
 ```python
 total=0
