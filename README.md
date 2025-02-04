@@ -358,6 +358,25 @@ print("you spent $" , sum, sep='---') # you spent $---66.5
 </details>
 
 
+ <details>
+  <summary> loop with range </summary>
+  <p>
+   
+```python
+total=0
+expenses=[]
+
+num_expenses = int(input("Enter number of expenses : "))
+for i in range(num_expenses):
+    expenses.append(float(input("Enter an expense :  \n")))
+
+total= sum(expenses)
+print("You spent $", total, sep='')
+```
+
+</p>
+</details>
+
 
 ## web requests
 
