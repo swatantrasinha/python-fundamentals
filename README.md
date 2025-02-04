@@ -260,6 +260,42 @@ else:
 </details>
 
  ## Chapter 04 - Lists and Loops   
+
+ # initialize a list      
+ 
+ ```python
+## LIST
+
+# initialize list
+acronyms=[]
+print(acronyms) # []
+
+acronyms=['LOL', 'IDK', 'SMH']
+print( acronyms) # ['LOL', 'IDK', 'SMH']
+```
+
+
+# append/remove/del --> add and remove item in list   
+
+```python
+acronyms.append('TBH') 
+acronyms.append('BFN') 
+print( acronyms) # ['LOL', 'IDK', 'SMH', 'TBH', 'BFN']
+
+# remove ->  remove element by value
+acronyms.remove("TBH")
+print( acronyms) # ['LOL', 'IDK', 'SMH', 'BFN']
+
+# del ->  remove element by index
+del acronyms[2]
+print( acronyms) # ['LOL', 'IDK', 'BFN']
+
+# Error Cases
+'''
+acronyms.remove("ABC") # ValueError: list.remove(x): x not in list
+del acronyms[3] # IndexError: list assignment index out of range
+'''
+```
  
 
 
