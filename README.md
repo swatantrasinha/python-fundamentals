@@ -260,9 +260,10 @@ else:
 </details>
 
  ## Chapter 04 - Lists and Loops   
-
- # initialize a list      
- 
+<details>
+  <summary>initialize a list  </summary>
+  <p>
+    
  ```python
 ## LIST
 
@@ -274,9 +275,13 @@ acronyms=['LOL', 'IDK', 'SMH']
 print( acronyms) # ['LOL', 'IDK', 'SMH']
 ```
 
+  </p>
+</details>
 
-# append/remove/del --> add and remove item in list   
-
+<details>
+  <summary>append/remove/del --> add and remove item in list </summary>
+  <p>
+   
 ```python
 acronyms.append('TBH') 
 acronyms.append('BFN') 
@@ -296,6 +301,8 @@ acronyms.remove("ABC") # ValueError: list.remove(x): x not in list
 del acronyms[3] # IndexError: list assignment index out of range
 '''
 ```
+  </p>
+</details>
  
 
 
