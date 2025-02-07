@@ -503,9 +503,36 @@ print(acronyms['TBH']) # honestly
 
 
 
+#### delete value in Dictionary   
+To delete a value - use del with key   
  
+```python
+acronyms={}
+acronyms['LOL'] = 'laugh out loud'
+acronyms['IDK'] = "i don't know"
+acronyms['TBH'] = 'to be honest'
+print("acronyms : ", acronyms)
+del acronyms['IDK']
+print("acronyms : ", acronyms)
+```
 
+if we use del for a key not present
+```python
+# del acronyms['ABC'] # KeyError
+```
 
+To avoid this we should use get   
+
+```python
+acronyms= { 'LOL': 'laugh out loud', 'IDK': "i don't know", 'TBH': 'to be honest'}
+definition= acronyms.get('ABC')
+print(definition) # if key is not there it will return None type (None - absence of a value)
+
+if definition:
+    del acronyms['ABC'] 
+else:
+    print("key does not exist")
+```
 
 </p>
 </details>
