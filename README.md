@@ -468,14 +468,14 @@ print(acronyms['LOL']) # laugh out loud
 
 ```
 
-Dictionary like list can hold anything   
+## Dictionary like list can hold anything   
 
 ```python
 menu= {'Soup' : 5, 'Salad': 6} # valid
 my_dict= {10: 'hello', 2: 6.5} # valid
 ```
 
-### Create Dictionary   
+#### Create Dictionary   
 We can initialize an empty dictionary and then add key/value to it   
 
 ```python
@@ -487,7 +487,7 @@ acronyms['TBH'] = 'to be honest'
 print(acronyms) # acronyms  {'LOL': 'laugh out loud', 'IDK': "i don't know", 'TBH': 'to be honest'}
 
 ```
-### Updating value in Dictionary
+#### Updating value in Dictionary
 
 ```python
 acronyms={}
