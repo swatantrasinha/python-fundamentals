@@ -435,6 +435,83 @@ for i in range(months):
 </details>
 
 
+ ## Chapter 05 - Dictionaries, JSON and Pip   
+
+ <details>
+  <summary> Need for Dictionary </summary>
+  
+  <p> 
+ lets say we want to store a list of acronyms and their translations.   
+
+We can use 2 lists as below :   
+
+      
+   ```python
+       acronyms=['LOL', 'IDK' , 'TBH']
+       translations=['laugh out loud', 'i dont know', 'to be honest']
+   ```
+
+But the problem here is if we add to one list then we need to add to other.      
+Similarly, if we remove an item from one list we need to remove from other list as well.   
+
+
+To solve this we can use ***Dictionary***   
+
+A Dictionary maps key to value. Here the acronym can be key and translation can be value.   
+To look up a value in dictionary we need to send key(instead of index)   
+
+
+```python
+
+acronyms= { 'LOL': 'laugh out loud', 'IDK': "i don't know", 'TBH': 'to be honest'}
+print(acronyms['LOL']) # laugh out loud
+
+```
+
+Dictionary like list can hold anything   
+
+```python
+menu= {'Soup' : 5, 'Salad': 6} # valid
+my_dict= {10: 'hello', 2: 6.5} # valid
+```
+
+### Create Dictionary   
+We can initialize an empty dictionary and then add key/value to it   
+
+```python
+
+acronyms={}
+acronyms['LOL'] = 'laugh out loud'
+acronyms['IDK'] = "i don't know"
+acronyms['TBH'] = 'to be honest'
+print(acronyms) # acronyms  {'LOL': 'laugh out loud', 'IDK': "i don't know", 'TBH': 'to be honest'}
+
+```
+### Updating value in Dictionary
+
+```python
+acronyms={}
+acronyms['LOL'] = 'laugh out loud'
+acronyms['IDK'] = "i don't know"
+acronyms['TBH'] = 'to be honest'
+
+print(acronyms['TBH'])  # to be honest
+
+acronyms['TBH']= 'honestly'
+print(acronyms['TBH']) # honestly
+```
+
+
+
+ 
+
+
+
+</p>
+</details>
+ 
+    
+
 ## web requests
 
 ## installing and using packages
