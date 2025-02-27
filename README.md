@@ -574,6 +574,79 @@ else:
 </p>
 </details>
 
+<details>
+  <summary> Combining Lists and Dictionaries </summary>
+  
+ <p> 
+ We saw how to use Dictionaries, lets see more complex situations where we need to combine lists with dictionaries   
+ 
+Lets say we have three different menu lists- breakfast, lunch and dinner   
+```python
+
+breakfast=["corn flakes", "idly" , "noodles"]   
+lunch= ["rice meal", "roti meal", "dosa"]   
+dinner= ["curd rice", "oats" , "milk"]
+
+# now to combime these into one list we can use :
+
+menus= [
+       ["corn flakes", "idly" , "noodles"],
+       ["rice meal", "roti meal", "fruits"], 
+       ["curd rice", "oats" , "milk"]]
+       
+print("Breakfast Menu \t ", menus[0]) # ['corn flakes', 'idly', 'noodles']
+print("Lunch Menu \t ", menus[1]) # ['rice meal', 'roti meal', 'fruits']
+print("Dinner Menu \t ", menus[2]) # ['curd rice', 'oats', 'milk']
+
+# To get individual item from inner list
+print("Breakfast Menu second item \t ", menus[0][1]) # idly
+
+```
+Instead of using list of lists as above, we canm also use dictionary   
+
+```python
+menus =  {
+          'breakfast' : ["corn flakes", "idly" , "noodles"],
+          'lunch': ["rice meal", "roti meal", "fruits"], 
+          'dinner' : ["curd rice", "oats" , "milk"]
+         };
+print("Breakfast Menu \t ", menus['breakfast']) # ['corn flakes', 'idly', 'noodles']
+print("Lunch Menu \t ", menus['lunch']) # ['rice meal', 'roti meal', 'fruits']
+print("Dinner Menu \t ", menus['dinner']) # ['curd rice', 'oats', 'milk']
+```
+
+the above code works well but what if we have many more menus- we may need to type each key then   
+lets try using for loop instead   
+Note: By default for loop in dictionary returns key which won'y help us as we want values   
+so we will use items method
+
+```python
+menus =  {
+          'breakfast' : ["corn flakes", "idly" , "noodles"],
+          'lunch': ["rice meal", "roti meal", "fruits"], 
+          'dinner' : ["curd rice", "oats" , "milk"]
+         };
+
+for menuName,menuValue in menus.items():
+    print (menuName , ':' ,  menuValue)
+
+```
+
+We can also use dictionary to represent object   
+
+```python
+person= {
+    'name': 'Sarah Smith',
+    'city': 'Orlando',
+    'age': 100
+}
+print(person.get('name') , "is " , person.get('age') , "years old ") # Sarah Smith is  100 years old 
+```
+
+
+ </p>
+</details>
+
 chapter 05 is done
 
 </p>
