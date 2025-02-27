@@ -644,10 +644,34 @@ print(person.get('name') , "is " , person.get('age') , "years old ") # Sarah Smi
 ```
 
 
+<details>
+  <summary> Print all emails </summary>
+  
+ <p> 
+  
+```python
+contacts= {
+    'number': 4,
+    'students': [
+        {'name': 'Sarah Holderness', 'email': "sarah@example.com" },
+        {'name': 'Harry Potter ', 'email': "harry@example.com" },
+        {'name': 'Ron Weasley', 'email': "ron@example.com" }
+    ]
+}
+
+print("Student Emails \n")
+for student in contacts['students']:
+    print(student['email'])
+```
+ 
+ </p>
+ </details>
+
+
  </p>
 </details>
 
-chapter 05 is done
+
 
 </p>
 </details>
