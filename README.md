@@ -572,7 +572,7 @@ else:
     print(movie, " is playing at : ", showtime) 
 ```
 </p>
-<details>
+</details>
 
 chapter 05 is done
 
