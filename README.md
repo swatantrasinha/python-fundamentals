@@ -544,6 +544,38 @@ else:
     print("key does not exist")
 ```
 
+Below is sample code using dictionary for movie schedule   
+
+<details>
+  <summary> Movie Schedule </summary>
+  <p> 
+
+```python
+
+current_movies= {
+    'The Grinch': '11:00 AM',
+    'Rudolph': '1:00 PM',
+    'Frosty the Snowman': '3:00 PM',
+    'Christmas Vacation': '5:00 PM'
+}
+
+print("We are showing the following movies: ")
+for key in current_movies:
+    print(key)
+
+movie= input("what movie would you like the show time for?  \n ")
+showtime= current_movies.get(movie)
+
+if showtime == None:
+    print("Requested movie is not playing")
+else:
+    print(movie, " is playing at : ", showtime) 
+```
+</p>
+<details>
+
+chapter 05 is done
+
 </p>
 </details>
  
