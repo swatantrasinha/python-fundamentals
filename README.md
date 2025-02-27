@@ -471,8 +471,18 @@ print(acronyms['LOL']) # laugh out loud
 ## Dictionary like list can hold anything   
 
 ```python
+
 menu= {'Soup' : 5, 'Salad': 6} # valid
+print("menu is : " , menu)
+
 my_dict= {10: 'hello', 2: 6.5} # valid
+print("my_dict is : " , my_dict)
+
+randon_dict= {10: 'hello', 'name': 6.5, 4.2: 'got it'} # valid
+print("randon_dict is : " , randon_dict) # {10: 'hello', 'name': 6.5, 4.2: 'got it'}
+print(randon_dict[10]) # hello
+print(randon_dict['name']) # 6.5
+print(randon_dict[4.2]) # got it
 ```
 
 #### Create Dictionary   
