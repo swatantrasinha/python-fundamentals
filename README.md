@@ -749,6 +749,23 @@ installed requests package globally
 But in case one project need version A and other project version B then it will cause problem.   
 For this we need ***Python Virtual Environment***   
 
+Details: https://docs.python.org/3/library/venv.html   
+
+Lets create it   
+
+1. uninstall existing requests package(so that we can show request package in new virtual environment)      
+> pip3 uninstall requests   
+
+2. create virtual environment with name say ***venv***
+> python3 -m venv venv   
+this will create directory venv   
+inside this venv there would be bin folder ***activate*** script and version of ***python*** and ***pip***
+<img width="1119" alt="image" src="https://github.com/user-attachments/assets/da69f6c9-19d4-40b6-9113-b887b1e9e58a" />
+
+
+> python -m venv /path/to/new/virtual/environment   
+
+
 
  </p>
 </details>
