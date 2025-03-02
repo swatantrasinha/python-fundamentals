@@ -439,15 +439,14 @@ for i in range(months):
 
  <details>
     <summary> Dictionaries  </summary>
-    <p> 
-      <details>
-        <summary> Need for Dictionary </summary>
-        <p>
-          lets say we want to store a list of acronyms and their translations.   
-
-We can use 2 lists as below :   
-
-      
+    <p>
+     
+   <details>
+    <summary> Need for Dictionary </summary>
+    <p>
+    lets say we want to store a list of acronyms and their translations.   
+    We can use 2 lists as below :   
+  
    ```python
        acronyms=['LOL', 'IDK' , 'TBH']
        translations=['laugh out loud', 'i dont know', 'to be honest']
@@ -486,14 +485,16 @@ print(randon_dict[10]) # hello
 print(randon_dict['name']) # 6.5
 print(randon_dict[4.2]) # got it
 ```
-        </p>
-   </details>
+
+  </p>
+</details>
     
  
  <details>
         <summary> CRUD in Dictionary </summary>
         <p>
          #### Create Dictionary   
+   
 We can initialize an empty dictionary and then add key/value to it   
 
 ```python
@@ -503,8 +504,8 @@ acronyms['LOL'] = 'laugh out loud'
 acronyms['IDK'] = "i don't know"
 acronyms['TBH'] = 'to be honest'
 print(acronyms) # acronyms  {'LOL': 'laugh out loud', 'IDK': "i don't know", 'TBH': 'to be honest'}
-
 ```
+
 #### Updating value in Dictionary
 
 ```python
@@ -522,6 +523,7 @@ print(acronyms['TBH']) # honestly
 
 
 #### delete value in Dictionary   
+
 To delete a value - use del with key   
  
 ```python
@@ -534,7 +536,8 @@ del acronyms['IDK']
 print("acronyms : ", acronyms)
 ```
 
-if we use del for a key not present
+if we use del for a key not present   
+
 ```python
 # del acronyms['ABC'] # KeyError
 ```
@@ -552,7 +555,7 @@ else:
     print("key does not exist")
 ```
 
-        </p>
+ </p>
  </details>
 
 
