@@ -843,6 +843,9 @@ print("Today's weather in " + city + " is " + description + " and temperature is
 </p>
 
 </details>
+
+
+ ## Chapter 06 - Functions 
     
 
 
