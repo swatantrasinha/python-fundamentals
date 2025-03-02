@@ -791,7 +791,50 @@ now if we open the file and run play button it will execute the program and show
 
 > deactivate
 
+<details>
+ <summary>Weather API using key</summary>
+ <p>
+  We will use weather api
+go to https://www.weatherapi.com/  -> click on pricing   -> free   --> signup --> verify email --> login   
+we will be able to see API key -> copy and save it (1385a520dfdb4dfeb0f192814250203)   
 
+now go to home page(click on home icon) -> then go to API Explorer
+https://www.weatherapi.com/api-explorer.aspx   
+and paste key
+<img width="1515" alt="image" src="https://github.com/user-attachments/assets/17e1e7db-13f8-4762-bc23-44e4dad171a4" />
+
+If we now click on show response, it will create utl to be used in code   
+and also complete data in response   
+<img width="666" alt="image" src="https://github.com/user-attachments/assets/703a4cc6-1538-4c55-8462-6e9a3402e67b" />
+
+We will write code to use url highlighted above and also extract highligted data from the complete response   
+
+```python
+
+import requests
+
+city= "London"
+url = "http://api.weatherapi.com/v1/current.json?key=1385a520dfdb4dfeb0f192814250203&q=" + city + "&aqi=no"
+response= requests.get(url)
+weather_json= response.json()
+
+'''the below line is also working 
+print(weather_json['current']['temp_f']) # working
+'''
+
+temp = weather_json.get('current').get('temp_f')
+print(temp) # 39.4
+
+description = weather_json.get('current').get('condition').get('text')
+print(description) # clear
+
+print("Today's weather in " + city + " is " + description + " and temperature is " + str(temp) + " degrees ")
+
+```
+
+
+ </p>
+</details>
 
  </p>
 </details>
