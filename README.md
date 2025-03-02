@@ -692,7 +692,40 @@ for student in contacts['students']:
 
  <details>
   <summary> JSON and PIP </summary>
-  <p>JSON and PIP here</p>
+  <p> 
+
+we will now see requesting data from internet using **request** package and we will see how to install this package using **pip**   
+
+## HTTP request in python   
+The ***request*** library let us do HTTP request   
+
+***pip*** - used to install any package from python package index   
+
+### to check if pip is installed 
+> pip3 --version
+
+### install the required package by 
+> pip3 requests
+
+We will make request to api - **http://api.open-notify.org/astros.json**   
+It would return json response in format:   
+
+```javascript
+{
+  "message": "success",
+  "number": NUMBER_OF_PEOPLE_IN_SPACE,
+  "people": [
+    {"name": NAME, "craft": SPACECRAFT_NAME},
+    ...
+  ]
+}
+```
+
+We will now write code in python for ***people currently in space***   
+   
+  </p>
+
+  
 </details>
     
 
