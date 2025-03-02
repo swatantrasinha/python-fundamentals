@@ -438,10 +438,12 @@ for i in range(months):
  ## Chapter 05 - Dictionaries, JSON and Pip   
 
  <details>
-  <summary> Need for Dictionary </summary>
-  
-  <p> 
- lets say we want to store a list of acronyms and their translations.   
+    <summary> Dictionaries  </summary>
+    <p> 
+      <details>
+        <summary> Need for Dictionary </summary>
+        <p>
+          lets say we want to store a list of acronyms and their translations.   
 
 We can use 2 lists as below :   
 
@@ -484,8 +486,14 @@ print(randon_dict[10]) # hello
 print(randon_dict['name']) # 6.5
 print(randon_dict[4.2]) # got it
 ```
-
-#### Create Dictionary   
+        </p>
+   </details>
+    
+ 
+ <details>
+        <summary> CRUD in Dictionary </summary>
+        <p>
+         #### Create Dictionary   
 We can initialize an empty dictionary and then add key/value to it   
 
 ```python
@@ -543,6 +551,11 @@ if definition:
 else:
     print("key does not exist")
 ```
+
+        </p>
+ </details>
+
+
 
 Below is sample code using dictionary for movie schedule   
 
