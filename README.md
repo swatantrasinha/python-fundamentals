@@ -683,15 +683,17 @@ for student in contacts['students']:
  </p>
  </details>
 
-
  </p>
 </details>
 
 
-
 </p>
 </details>
- 
+
+ <details>
+  <summary> JSON and PIP </summary>
+  <p>JSON and PIP here</p>
+</details>
     
 
 ## web requests
