@@ -705,7 +705,8 @@ The ***request*** library let us do HTTP request
 > pip3 --version
 
 ### install the required package by 
-> pip3 requests
+> pip3 install requests   
+
 
 We will make request to api - **http://api.open-notify.org/astros.json**   
 It would return json response in format:   
@@ -737,13 +738,10 @@ for person in json['people']:
 
 ```
    
-  </p>
+</p>
 
-  
 </details>
     
 
-## web requests
 
-## installing and using packages
 
