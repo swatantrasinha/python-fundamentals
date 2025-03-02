@@ -758,12 +758,38 @@ Lets create it
 
 2. create virtual environment with name say ***venv***
 > python3 -m venv venv   
+
 this will create directory venv   
-inside this venv there would be bin folder ***activate*** script and version of ***python*** and ***pip***
+and inside this venv there would be bin folder ***activate*** script and version of ***python*** and ***pip***   
+
 <img width="1119" alt="image" src="https://github.com/user-attachments/assets/da69f6c9-19d4-40b6-9113-b887b1e9e58a" />
 
 
-> python -m venv /path/to/new/virtual/environment   
+
+
+4. To use package inside this virtual environment(venv), we need to activate it   
+source dir_name/bin/activate
+
+> source venv/bin/activate   
+
+Once activated we can see the name in parenthesis (highlighted in red below) which indicated its activated      
+<img width="1119" alt="image" src="https://github.com/user-attachments/assets/c7e394dd-d603-4642-b0d4-13fc34246931" />
+
+5. now if we give command to install ***requests*** it will install locally inside the virtual environment   
+
+> pip3 install requests
+
+6. Now to use it VS code does know to run python with our new virtual environment.   
+It do prompt us to select the venv when we create it but in case it does not prompt we can select manually by   
+
+View --> Command Palette --> type ***search interpreter*** --> scroll and select python version and venv (see below)
+<img width="1064" alt="image" src="https://github.com/user-attachments/assets/36eb86b5-ad43-4b62-902d-cd52c1fd034f" />
+
+now if we open the file and run play button it will execute the program and show output in terminal
+ 
+7. To deactivate virtual environment we just need to type   
+
+> deactivate
 
 
 
