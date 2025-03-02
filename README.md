@@ -722,6 +722,20 @@ It would return json response in format:
 ```
 
 We will now write code in python for ***people currently in space***   
+
+```python
+import requests
+
+response= requests.get('http://api.open-notify.org/astros.json')
+json= response.json()
+
+
+print("The people currently in space are: \n")
+
+for person in json['people']:
+    print(person['name'])
+
+```
    
   </p>
 
