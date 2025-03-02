@@ -737,6 +737,22 @@ for person in json['people']:
     print(person['name'])
 
 ```
+
+<details>
+ <summary>Creating Python Virtual Environment</summary>
+ <p>
+  The command we gave earlier:   
+  
+  > pip3 install requests
+
+installed requests package globally   
+But in case one project need version A and other project version B then it will cause problem.   
+For this we need ***Python Virtual Environment***   
+
+
+ </p>
+</details>
+
    
 </p>
 
