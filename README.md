@@ -847,9 +847,13 @@ print("Today's weather in " + city + " is " + description + " and temperature is
 
  ## Chapter 06 - Functions   
 
- sample python function1
+ sample python functions
 
- ```python
+  <details>
+  <summary>greeting</summary>
+  <p>
+
+```python
 def greeting(name):
     print("Hello " + name)
 
@@ -859,12 +863,19 @@ greeting(input_name)
 
 ***Local scope*** : variable created inside a function and can only be used inside that function. Here name is location variable inside function greeting   
 
+  </p>
+  </details>
 
-sample function 2
 
-```python
 
-def addition(a,b):
+
+
+ <details>
+  <summary>addition</summary>
+  <p>
+   
+   ```python
+   def addition(a,b):
     return a + b
 
 num1= float(input("Enter your first number \n"))
@@ -874,7 +885,10 @@ print("result of addition is : ", result)
 
 ```
 
-Note: We can use function to organize code as well . So the other way to write code for above function is :   
+
+
+***Note***: We can use function to organize code as well . 
+So the other way to write code for above function is :   
 
 
 ```python
@@ -891,7 +905,10 @@ def main():
 main()
 
 ```
+</p>
+</details>
 
+ 
  <details>
   <summary>Dice Rolling Game</summary>
   <p>
@@ -926,6 +943,8 @@ main()
   ```
   </p>
  </details>
+
+  ## Chapter 07 - Classes and Objects
 
 
 
