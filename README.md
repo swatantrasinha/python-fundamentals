@@ -847,7 +847,7 @@ print("Today's weather in " + city + " is " + description + " and temperature is
 
  ## Chapter 06 - Functions   
 
- sample python function
+ sample python function1
 
  ```python
 def greeting(name):
@@ -857,7 +857,42 @@ input_name= input("Enter your name \n")
 greeting(input_name)
 ```
 
-***Local scope*** : variable created inside a function and can only be used inside that function.   
+***Local scope*** : variable created inside a function and can only be used inside that function. Here name is location variable inside function greeting   
+
+
+sample function 2
+
+```python
+
+def addition(a,b):
+    return a + b
+
+num1= float(input("Enter your first number \n"))
+num2= float(input("Enter your second number \n"))
+result= addition(num1, num2)
+print("result of addition is : ", result)
+
+```
+
+Note: We can use function to organize code as well . So the other way to write code for above function is :   
+
+
+```python
+
+def addition(a,b):
+    return a+b
+
+def main():
+    num1= float(input("Enter your first number \n"))
+    num2= float(input("Enter your second number \n"))
+    result= addition(num1 , num2)
+    print("result of addition is : ", result)
+    
+main()
+
+```
+  
+
 
 
     
