@@ -845,7 +845,21 @@ print("Today's weather in " + city + " is " + description + " and temperature is
 </details>
 
 
- ## Chapter 06 - Functions 
+ ## Chapter 06 - Functions   
+
+ sample python function
+
+ ```python
+def greeting(name):
+    print("Hello " + name)
+
+input_name= input("Enter your name \n")
+greeting(input_name)
+```
+
+***Local scope*** : variable created inside a function and can only be used inside that function.   
+
+
     
 
 
