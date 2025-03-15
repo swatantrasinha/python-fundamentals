@@ -945,9 +945,8 @@ main()
  </details>
 
   ## Chapter 07 - Classes and Objects
-
-Sample Program:
-
+<details>
+<summary>Sample Program: </summary>
 ```python
 
 class Robot_Dog:
@@ -972,6 +971,10 @@ Chihuaha
 Woof Woof !!!
 '''
 ```
+</details>
+
+
+
 
 
 
