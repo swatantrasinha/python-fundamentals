@@ -964,7 +964,15 @@ print(my_dog.name)
 print(my_dog.breed)
 my_dog.bark() 
 
+
+'''
+Output is:
+Spot
+Chihuaha
+Woof Woof !!!
+'''
 ```
+
 
 
 
