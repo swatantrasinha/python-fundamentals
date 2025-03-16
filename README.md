@@ -1046,7 +1046,8 @@ main()
 
 
 ```
-Outout is below: 
+Outout is below:   
+ 
 <img width="282" alt="image" src="https://github.com/user-attachments/assets/0d8623a2-4d85-4049-81be-67fde238c2cd" />
 
 
