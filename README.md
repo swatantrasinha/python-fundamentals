@@ -976,6 +976,40 @@ Woof Woof !!!
 
 </details>
 
+
+<details>
+ <summary>Price Formatting</summary>   
+ 
+ ```python
+print('hello','world') # hello world
+print('hello', 'world', sep='') # helloworld
+print('----------------')
+
+salary= 50000
+paycheck= salary/52
+print('paycheck ', paycheck) # paycheck  961.5384615384615
+
+# rounding `n` to 2 decimal places
+paycheckRoundOff = round(paycheck, 2) 
+
+print('paycheckRoundOff : ', paycheckRoundOff)  # paycheckRoundOff:  961.54
+print('paycheckRoundOff with dollar : $',paycheckRoundOff)  # paycheckRoundOff with dollar :$ 961.54 (note: there is space after dollar)
+print('paycheck with dollar formatted: ', '$',paycheckRoundOff, sep='') # paycheck with dollar formatted:$961.54
+
+
+print('----------------')
+
+print('Alternative method is below : ')
+formatted_price = f"${paycheckRoundOff:.2f}"
+print('formatted_price :' , formatted_price)
+
+print(f'Pay Check:  ${paycheck:,.2f}')
+ ```
+
+</details>
+
+
+
 <details>
  <summary>Demo : Company Payroll: </summary>
 
