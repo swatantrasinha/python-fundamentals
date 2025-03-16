@@ -944,9 +944,11 @@ main()
   </p>
  </details>
 
-  ## Chapter 07 - Classes and Objects
+  ## Chapter 07 - Classes and Objects   
+  
 <details>
-<summary>Sample Program: </summary>
+  <summary>Sample Program: </summary>
+ 
 ```python
 
 class Robot_Dog:
@@ -971,7 +973,87 @@ Chihuaha
 Woof Woof !!!
 '''
 ```
+
 </details>
+
+<details>
+ <summary>Demo : Company Payroll: </summary>
+
+employee.py   
+```python
+
+class Employee:
+    def __init__(self, fname, lname, salary):
+        self.fname= fname
+        self.lname= lname
+        self.salary= salary
+    
+    def calculate_paycheck(self):
+        return self.salary/52
+```
+
+company.py   
+
+
+```python
+from employee import Employee
+
+class Company:
+    def __init__(self):
+        self.employees=[]
+    
+    def add_employee(self, new_employee):
+        self.employees.append(new_employee)
+    
+    def display_employees(self):
+        print('Current Employees are: ')
+        for i in self.employees:
+            print(i.fname, i.lname)
+        print('----------------')
+    
+    def pay_employees(self):
+        print('Paying Employees : ')
+        for i in self.employees:
+            print('Paycheck for : ', i.fname , i.lname)
+            print(f'Amount:  ${i.calculate_paycheck():,.2f}')
+            print('---------------------')
+            
+        
+        
+
+def main():
+    my_company= Company()
+    employee1= Employee('Sarah', 'Hess', 50000)
+    my_company.add_employee(employee1)
+    employee2= Employee('Lee', 'Smith', 25000)
+    my_company.add_employee(employee2)
+    employee3= Employee('Bob', 'Brown', 60000)
+    my_company.add_employee(employee3)
+    
+    # print(my_company.employees)
+    '''
+    Output: [<employee.Employee object at 0x100acea50>, <employee.Employee object at 0x100c10a50>, <employee.Employee object at 0x100c10b90>]
+    '''
+    
+    my_company.display_employees()
+    
+    my_company.pay_employees()
+    
+    
+
+main()
+
+
+
+```
+Outout is below: 
+<img width="282" alt="image" src="https://github.com/user-attachments/assets/0d8623a2-4d85-4049-81be-67fde238c2cd" />
+
+
+</details>
+
+
+
 
 
 
