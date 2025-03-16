@@ -979,6 +979,9 @@ Woof Woof !!!
 
 <details>
  <summary>Price Formatting</summary>   
+
+ This price formatting will be useful in below Company Payroll demo   
+
  
  ```python
 print('hello','world') # hello world
@@ -1011,7 +1014,7 @@ print(f'Pay Check:  ${paycheck:,.2f}')
 
 
 <details>
- <summary>Demo : Company Payroll: </summary>
+ <summary>Demo : Company Payroll </summary>
 
 employee.py   
 ```python
