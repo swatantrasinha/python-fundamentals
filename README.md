@@ -1205,7 +1205,7 @@ class CommissionEmployee(SalariedEmployee):
 
 ```
 
-<ul>company.py</ul>   
+***company.py***      
 
 ```python
 from employee import SalariedEmployee, HourlyEmployee, CommissionEmployee
