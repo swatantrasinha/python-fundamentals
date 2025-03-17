@@ -1090,6 +1090,27 @@ Outout is below:
 
 </details>
 
+<details>
+ <summary>Inheritance</summary>
+ <p>
+  Relationships in Object Oriented Programming   
+
+1.  has a relationship:   
+  - A company has employees   
+  - A robot has a battery   
+
+2. is a relationship:   
+  - A robot dog is a robot
+  - A robot cats is a robot   
+
+Note: is-a-relationship is also called **inheritance**   
+
+
+
+
+ </p>
+</details>
+
 
 
 
