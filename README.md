@@ -1105,7 +1105,58 @@ Outout is below:
 
 Note: is-a-relationship is also called **inheritance**   
 
+<details>
+ <summary>Inheritance Demo</summary>
+ <p>
+  
+```python
+class Robot:
+    def __init__(self, name):
+        self.name= name
+        self.position=[0,0]
+        print("My name is : ", self.name)
+    
+    def walk(self,x):
+        self.position[0]=self.position[0] + x
+        print("New position: ", self.position)
+    
+    def eat(self):
+        print("I am hungry !!")
+        
+class Robot_Dog(Robot):  # inheriting parent class
+    def make_noise(self):
+        print("Woof Woof !!!")
+    
+    def eat(self):    # Method Overiding
+        super().eat() # calling parent class eat() method
+        print("I like Bacon!!!")
+        
+my_robot_dog= Robot_Dog('Bud') 
+my_robot_dog.walk(20)
+my_robot_dog.make_noise() 
+my_robot_dog.eat()
 
+```
+   
+
+Output:   
+
+<img width="568" alt="image" src="https://github.com/user-attachments/assets/95e5f585-5352-4d82-beca-d61d8326c11e" />   
+
+
+ </p>
+</details>
+
+Benefits of Inheritance:   
+1. lets us model real world relationships   
+2. let is reuse code   
+
+<details>
+ <summary>Company Payroll With Inheritance</summary>
+ <p>
+  
+ </p>
+</details>
 
 
  </p>
