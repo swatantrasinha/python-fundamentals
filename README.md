@@ -1164,12 +1164,98 @@ So lets create a general Employee class for below three three types of employee 
 2. HourlyEmployee   
 3. CommissionEmployee   
 
+<u> employee.py </u>
+
 ```python
+class Employee:
+    def __init__(self, fname, lname):
+        self.fname= fname
+        self.lname= lname
+ 
+    
+
+
+class SalariedEmployee(Employee):
+    def __init__(self,fname, lname, salary):
+        super().__init__(fname, lname)
+        self.salary= salary
+    
+    def calculate_paycheck(self):
+        return self.salary/52
+
+class HourlyEmployee(Employee):
+    def __init__(self,fname, lname, weekly_hours, hourly_rate):
+        super().__init__(fname, lname)
+        self.weekly_hours= weekly_hours
+        self.hourly_rate= hourly_rate
+    
+    def calculate_paycheck(self):
+        return self.weekly_hours * self.hourly_rate
+
+class CommissionEmployee(SalariedEmployee):
+    def __init__(self, fname, lname, salary, sales_num, com_rate):
+        super().__init__(fname, lname, salary)
+        self.sales_num = sales_num
+        self.com_rate = com_rate
+    
+    def calculate_paycheck(self):
+        regular_salary= super().calculate_paycheck()
+        total_commission= self.sales_num * self.com_rate
+        return regular_salary + total_commission
 
 ```
 
+company.py
 
+```python
+from employee import SalariedEmployee, HourlyEmployee, CommissionEmployee
+
+class Company:
+    def __init__(self):
+        self.employees=[]
+    
+    def add_employee(self, new_employee):
+        self.employees.append(new_employee)
+    
+    def display_employees(self):
+        print('Current Employees are: ')
+        for i in self.employees:
+            print(i.fname, i.lname)
+        print('----------------')
+
+    def pay_employees(self):
+        print('Paying Employees : ')
+        for i in self.employees:
+            print('Paycheck for : ', i.fname , i.lname)
+            print(f'Amount:  ${i.calculate_paycheck():,.2f}')
+            print('---------------------')
+            
   
+def main():
+    my_company= Company()
+    employee1= SalariedEmployee('Sarah', 'Hess', 50000)
+    my_company.add_employee(employee1)
+    
+    employee2= HourlyEmployee('Lee', 'Smith', 25, 50)
+    my_company.add_employee(employee2)
+    
+    employee3= CommissionEmployee('Bob', 'Brown', 30000, 5, 200)
+    my_company.add_employee(employee3)
+    
+    my_company.display_employees()
+    my_company.pay_employees()
+    
+
+main()
+
+
+```
+  
+Outout is below:   
+
+<img width="502" alt="image" src="https://github.com/user-attachments/assets/55a3fbde-6896-4631-add0-c4c2da89a6c4" />
+
+
  </p>
 </details>
 
