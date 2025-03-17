@@ -1154,6 +1154,21 @@ Benefits of Inheritance:
 <details>
  <summary>Company Payroll With Inheritance</summary>
  <p>
+ Now we are going to use inheritance to add different types of Employee class   
+
+Unlike in Company Payroll demo above, the company not only has employees that earn a salary but also hourly and commission employee   
+   
+So lets create a general Employee class for below three three types of employee to inherit from   
+   
+1. SalariedEmployee   
+2. HourlyEmployee   
+3. CommissionEmployee   
+
+```python
+
+```
+
+
   
  </p>
 </details>
