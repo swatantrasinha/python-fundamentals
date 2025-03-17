@@ -1164,7 +1164,7 @@ So lets create a general Employee class for below three three types of employee 
 2. HourlyEmployee   
 3. CommissionEmployee   
 
-<u> employee.py </u>
+***employee.py***   
 
 ```python
 class Employee:
@@ -1205,7 +1205,7 @@ class CommissionEmployee(SalariedEmployee):
 
 ```
 
-company.py
+<ul>company.py</ul>   
 
 ```python
 from employee import SalariedEmployee, HourlyEmployee, CommissionEmployee
