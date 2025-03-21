@@ -1308,6 +1308,26 @@ Output:
 To Handle this we use try/except   
  <img width="599" alt="image" src="https://github.com/user-attachments/assets/b78b7817-5e99-4c02-ab5d-1cfeb7773c10" />
 
+```python
+acronyms= {
+    'LOL' : 'laugh out loud',
+    'IDK': "I dont't know",
+    'TBH': "To Be Honest"
+    }
+acronym = 'BTW'
+
+try:
+    definition = acronyms[acronym]
+    print('Definition of ', acronyms , ' is ' , definition)
+except:
+    print('The acronym ', acronym, 'does not exist')
+
+print('The program keeps going on ...')
+```
+
+Output:   
+![image](https://github.com/user-attachments/assets/fa15d819-826a-45ff-ae5a-a5314e8c812e)
+
 
  </p>
 </details>
