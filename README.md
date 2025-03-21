@@ -1382,16 +1382,27 @@ Output:
 ![image](https://github.com/user-attachments/assets/8559b7b4-334a-4773-9185-2138b08dc726)
 
 </details>
+</details>
 
 
 
  </p>
 </details>
 
+
+
   <details>
   <summary>Reading Files </summary>
-    <p>
-  
+    <p>   
+
+  **Task** :  Finding acronym in a text file   
+ 
+1. Ask user what acronym they are looking for   
+2. Open the file   
+3. Loop and read each line of file   
+4. Check if current acronym matches with what the user is looking for   
+5. print the definition   
+
  </p>
 </details>
 
