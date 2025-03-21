@@ -1271,6 +1271,7 @@ Outout is below:
   <summary>Exceptions </summary>
   <p>
  
+**Without Exception**   
 
 ```python
 acronyms= {
@@ -1279,14 +1280,18 @@ acronyms= {
     'TBH': "To Be Honest"
     }
 acronym = 'TBH'
-definition = acronyms[acronym]
-print('Definition of ', acronyms , ' is ' , definition)
 
-print('The program keeps going on ...')
+definition = acronyms[acronym]
+print('Definition of ', acronym , ' is ' , definition)
+print('The program keeps going on ...') 
 ```
 Output:   
 
-![image](https://github.com/user-attachments/assets/4df74365-9d3f-4e1d-a84e-b485603f1980)
+![image](https://github.com/user-attachments/assets/b80ef799-b4bb-407b-b25f-7843e76a2995)
+
+
+
+**With Exception**
 
 ```python
 acronyms= {
@@ -1295,14 +1300,15 @@ acronyms= {
     'TBH': "To Be Honest"
     }
 acronym = 'BTW'
-definition = acronyms[acronym]
-print('Definition of ', acronyms , ' is ' , definition)
 
-print('The program keeps going on ...')
+definition = acronyms[acronym]
+print('Definition of ', acronym , ' is ' , definition)
+print('The program keeps going on ...') 
 ```
 
 Output:   
-![image](https://github.com/user-attachments/assets/0a0fa0b4-f08f-4c18-b546-1b117a0eb5fa)
+![image](https://github.com/user-attachments/assets/f48cd619-4d24-4f1c-8362-185f98591968)
+
 
 
 To Handle this we use try/except   
@@ -1330,6 +1336,54 @@ Output:
 
 **finally** - to execute code after try/except block.
 The code in *finally* block will execute whether there is error or not  
+
+<details>
+ <summary>raising exception</summary>
+ As a python developer we can raise/throw an exception if a certain condition occurs   
+e.g: In the above example where BTW does not exist we decided to raise KeyError exception   
+
+<details>
+ <summary>raise pre-defined exception</summary>
+
+ ```python
+ def remainder_division(a,b):
+    if b == 0:
+        raise ZeroDivisionError
+    
+    result= a//b
+    remainder= a%b
+    print(a, "/" , b , "is ", result, " and remainder is : ", remainder)
+    
+# Main Program
+remainder_division(10,0)
+ ```
+Output:   
+![image](https://github.com/user-attachments/assets/04c31c5a-ab7f-4e58-b7c0-99c298d9d868)
+
+</details>
+
+<details>
+ <summary>raise custom exception</summary>
+ 
+ ```python
+ 
+ def remainder_division(a,b):
+    if b == 0:
+        raise Exception("Divisor cannot be zero")
+    
+    result= a//b
+    remainder= a%b
+    print(a, "/" , b , "is ", result, " and remainder is : ", remainder)
+    
+# Main Program
+remainder_division(10,0)
+ ```
+Output:   
+![image](https://github.com/user-attachments/assets/8559b7b4-334a-4773-9185-2138b08dc726)
+
+</details>
+
+
 
  </p>
 </details>
