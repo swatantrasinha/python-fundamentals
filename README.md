@@ -1401,7 +1401,39 @@ Output:
 2. Open the file   
 3. Loop and read each line of file   
 4. Check if current acronym matches with what the user is looking for   
-5. print the definition   
+5. print the definition
+
+Lets say we have file acronyms.txt
+```javascript
+'LOL' - 'laugh out loud',
+'IDK' -  "I dont't know",
+'TBH' -  "To Be Honest"
+```
+
+**Ways to read a file**
+
+   <details>
+    <summary>read method</summary>
+    <p>
+*read* method returns the whole file as a string by default or it will return the specificed number of bytes   
+
+     
+    ```python
+    
+    file=open('acronyms.txt')
+    try:
+     # file operations
+     result= file.read()
+     print(result)
+    finally: 
+     file.close()
+    ```
+    </p>
+   </details>
+
+   Output:   
+![image](https://github.com/user-attachments/assets/85533195-6286-4a04-8d56-0a44810f69b6)
+
 
  </p>
 </details>
