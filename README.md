@@ -1509,6 +1509,31 @@ Output:
    </p>
 </details>
 
+<details>
+ <summary>find acronym in file</summary>
+ <p>
+  
+  ```python
+  look_up= input("what acronym would you like to look up \n")
+found= False
+
+with open('acronyms.txt') as file:
+    for line in file:
+        if look_up in line:
+            print(line)
+            fount=True
+            break
+
+if not found:
+    print('acronym doesnot exist in file')
+ ```
+Output:   
+
+![image](https://github.com/user-attachments/assets/bff1665f-f425-4ac4-b7f2-57881805af58)
+
+ </p>
+</details>
+
  </p>
 </details>
 
