@@ -1418,7 +1418,7 @@ Lets say we have file acronyms.txt
 *read* method returns the whole file as a string by default or it will return the specificed number of bytes   
 
      
-    ```python
+   ```python
     
     file=open('acronyms.txt')
     try:
@@ -1427,7 +1427,7 @@ Lets say we have file acronyms.txt
      print(result)
     finally: 
      file.close()
-    ```
+   ```
    
 
    Output:   
@@ -1439,7 +1439,7 @@ Lets say we have file acronyms.txt
 <details>
     <summary>readline method</summary>
  <p>
-  readline method returns the next line of the file as a string
+  *readline* method returns the next line of the file as a string
 
   ```python
 file=open('acronyms.txt')
@@ -1462,7 +1462,7 @@ Output:
     <p>
     *readlines* returns the list of strings of all of the lines in the file
      
-     ```python
+   ```python
      file=open('acronyms.txt')
      try:
       # file operations
@@ -1470,12 +1470,13 @@ Output:
       print(result)
     finally: 
       file.close()
-    ```
+   ```
 
     Output:    
 ![image](https://github.com/user-attachments/assets/f03c7c19-51f1-4b82-950a-23c83cee8476)
 
 Since it returns a list ee can loop over and print each line   
+
 ```python
 file=open('acronyms.txt')
 try:
