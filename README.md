@@ -1266,9 +1266,7 @@ Outout is below:
 
 ## Chapter 08 - Working With Files   
   
-<details>
-  <summary>Sample Program: </summary>
- <p>
+
 <details>
   <summary>Exceptions </summary>
   <p>
@@ -1289,8 +1287,8 @@ Outout is below:
   
  </p>
 </details>
- </p>
-</details>
+ 
+
 
 
 
