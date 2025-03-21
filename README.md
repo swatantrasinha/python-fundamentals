@@ -1537,7 +1537,44 @@ Output:
  </p>
 </details>
 
+<details>
+  <summary>Write File </summary>
+Say we have file acronyms.txt with below contents:   
+ 
+```javascript
+ BY - Bye World
+GA - Good Afternoon
+ ```
+ 
+ <p>
+  1. Ask user what acronym they want to add   
+  2. ask user for the definition   
+  3. open the file   
+  4. write new acronym and its definition to the file   
 
+```python
+acronym= input("what acronym do you want to add ? \n")
+definition= input("what acronym do you want to add for above acronym \n") 
+
+# with open('acronyms.txt', 'w') as file:
+'''
+w is for write mode but it deletes all previous content and then writes freshly
+to apend new text at end we will use append - 'a' as below : 
+'''
+with open('acronyms.txt', 'a') as file:
+    file.write(acronym + ' - ' + definition + '\n')
+```
+Output:   
+![image](https://github.com/user-attachments/assets/8d3cf964-31cb-4feb-a4d8-e36e63d128a9)
+
+Now acronyms.txt is changed to :   
+```javascript
+BY - Bye World
+GA - Good Afternoon
+GN - good night
+```
+ </p>
+</details>
 
 
 
