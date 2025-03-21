@@ -1328,6 +1328,8 @@ print('The program keeps going on ...')
 Output:   
 ![image](https://github.com/user-attachments/assets/fa15d819-826a-45ff-ae5a-a5314e8c812e)
 
+**finally** - to execute code after try/except block.
+The code in *finally* block will execute whether there is error or not  
 
  </p>
 </details>
