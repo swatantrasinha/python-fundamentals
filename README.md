@@ -1270,7 +1270,45 @@ Outout is below:
 <details>
   <summary>Exceptions </summary>
   <p>
-  
+ 
+
+```python
+acronyms= {
+    'LOL' : 'laugh out loud',
+    'IDK': "I dont't know",
+    'TBH': "To Be Honest"
+    }
+acronym = 'TBH'
+definition = acronyms[acronym]
+print('Definition of ', acronyms , ' is ' , definition)
+
+print('The program keeps going on ...')
+```
+Output:   
+
+![image](https://github.com/user-attachments/assets/4df74365-9d3f-4e1d-a84e-b485603f1980)
+
+```python
+acronyms= {
+    'LOL' : 'laugh out loud',
+    'IDK': "I dont't know",
+    'TBH': "To Be Honest"
+    }
+acronym = 'BTW'
+definition = acronyms[acronym]
+print('Definition of ', acronyms , ' is ' , definition)
+
+print('The program keeps going on ...')
+```
+
+Output:   
+![image](https://github.com/user-attachments/assets/0a0fa0b4-f08f-4c18-b546-1b117a0eb5fa)
+
+
+To Handle this we use try/except   
+ <img width="599" alt="image" src="https://github.com/user-attachments/assets/b78b7817-5e99-4c02-ab5d-1cfeb7773c10" />
+
+
  </p>
 </details>
 
