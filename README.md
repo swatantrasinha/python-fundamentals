@@ -1264,6 +1264,35 @@ Outout is below:
 </details>
 
 
+## Chapter 08 - Working With Files   
+  
+<details>
+  <summary>Sample Program: </summary>
+ <p>
+<details>
+  <summary>Exceptions </summary>
+  <p>
+  
+ </p>
+</details>
+
+  <details>
+  <summary>Reading Files </summary>
+    <p>
+  
+ </p>
+</details>
+
+<details>
+  <summary>File Manipulation </summary>
+ <p>
+  
+ </p>
+</details>
+ </p>
+</details>
+
+
 
 
 
