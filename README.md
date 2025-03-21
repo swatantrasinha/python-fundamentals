@@ -1428,15 +1428,93 @@ Lets say we have file acronyms.txt
     finally: 
      file.close()
     ```
-    </p>
-   </details>
+   
 
    Output:   
 ![image](https://github.com/user-attachments/assets/85533195-6286-4a04-8d56-0a44810f69b6)
 
+ </p>
+   </details>
+
+<details>
+    <summary>readline method</summary>
+ <p>
+  readline method returns the next line of the file as a string
+
+  ```python
+file=open('acronyms.txt')
+try:
+    # file operations
+    result= file.readline()
+    print(result)
+finally: 
+    file.close()
+```
+Output:   
+![image](https://github.com/user-attachments/assets/63628eda-2145-4f47-80ec-7608e0e1f029)
 
  </p>
 </details>
+
+
+<details>
+    <summary>readlines method</summary>
+    <p>
+    *readlines* returns the list of strings of all of the lines in the file
+     
+     ```python
+     file=open('acronyms.txt')
+     try:
+      # file operations
+      result= file.readlines()
+      print(result)
+    finally: 
+      file.close()
+    ```
+
+    Output:    
+![image](https://github.com/user-attachments/assets/f03c7c19-51f1-4b82-950a-23c83cee8476)
+
+Since it returns a list ee can loop over and print each line   
+```python
+file=open('acronyms.txt')
+try:
+    # file operations
+    result= file.readlines()
+    # print(result)
+    for line in result:
+        print(line)
+    
+finally: 
+    file.close()
+```
+Output:   
+![image](https://github.com/user-attachments/assets/41053aa5-454f-44b8-b4cf-6ad5f11aa10d)
+
+This type of loop for reading file is used so often hence there is shortcut 
+```python
+file=open('acronyms.txt')
+try:
+    # file operations
+    #result= file.readlines()
+    for line in file:
+        print(line)
+    
+finally: 
+    file.close()
+```
+Output:   
+![image](https://github.com/user-attachments/assets/7b2a5c77-9df1-43cc-b640-abfe4ecd19dd)
+   </p>
+</details>
+
+ </p>
+</details>
+
+
+
+
+
 
 <details>
   <summary>File Manipulation </summary>
