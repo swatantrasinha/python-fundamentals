@@ -1620,19 +1620,13 @@ main()
  ```
    
   </p>
-<details>
-
+  
+ </p>
 </details>
-
-
-
 
 <details>
   <summary>File Manipulation </summary>
  <p>
-  
- </p>
-</details>
  
 
 
