@@ -1574,6 +1574,54 @@ GA - Good Afternoon
 GN - good night
 ```
  </p>
+**Note**: With write or append mode if file does not exist it will create new file with it
+However with read mode if file does not exist it will throw error
+
+</details>
+
+<details>
+  <summary>Read and Write In File </summary>
+  <p>
+
+ ```python
+def find_acronym():
+    look_up= input("what acronym would you like to look up \n")
+    found= False
+    try:
+        with open('acronyms.txt') as file:
+            for line in file:
+                if look_up in line:
+                    print(line)
+                    found=True
+                    break
+    except FileNotFoundError as e:
+        print('File not found')
+        return
+        
+
+    if not found:
+        print('acronym doesnot exist in file')
+
+def add_acronym():
+    acronym= input("what acronym do you want to add ? \n")
+    definition= input("what definition do you want to add for above acronym \n") 
+
+    with open('acronyms.txt', 'a') as file:
+        file.write(acronym + ' - ' + definition + '\n')
+
+def main():
+    choice= input("Do you want to find(F) or add(A) an acronym? \n")
+    if choice == 'F':
+        find_acronym()
+    elif choice == 'A':
+        add_acronym()
+
+main()   
+ ```
+   
+  </p>
+<details>
+
 </details>
 
 
