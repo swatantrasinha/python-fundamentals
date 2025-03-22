@@ -1626,7 +1626,13 @@ main()
 
 <details>
   <summary>File Manipulation </summary>
+ 
  <p>
+Python has some built-in modules for handling files.   
+  
+ </p>
+ </details>
+
  
 
 
