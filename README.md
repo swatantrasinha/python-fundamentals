@@ -213,7 +213,7 @@ else :
 # not if
 forcaset='rainy'
 if not forcaset == 'rainy':
-    print("Go Outside Inside")
+    print("Go Outside")
 else :
     print("Stay Inside")
 # Output: Stay Inside
