@@ -343,7 +343,16 @@ if word in acronyms:
     print(word + " is in the list")
 else:
     print(word + " is not in the list")
-   ```
+
+print("----------------")
+myList= [1,2,3,4,5]
+is_3_Present = 3 in myList
+is_6_Present = 6 in myList
+print("3 isPresent in myList : " , is_3_Present) # True
+print("6 isPresent in myList : " , is_6_Present) # False
+print("----------------")
+
+```
   </p>
  </details>
 
