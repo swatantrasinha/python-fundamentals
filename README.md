@@ -400,8 +400,13 @@ print("you spent $" , sum, sep='---') # you spent $---66.5
    
    ```python
 
-# range(num)  -> means 0 to num   
+# range(num)  -> means num iterations
 # range(7) means -> 0 to 6 : 0,1,2,3,4,5,6      
+
+for i in range(7):
+    print(i)
+    
+print("--------------------")
 
 # range(start, stop, step)   
 # range(0,7,1) --> 0,1,2,3,4,5,6   
@@ -414,7 +419,7 @@ for i in range(2,14,2):
 
   ```
   
-  we will now use range with for loop:
+ we will now use range with for loop:
    
 ```python
 total=0
