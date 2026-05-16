@@ -285,17 +285,41 @@ print( acronyms) # ['LOL', 'IDK', 'SMH']
   <p>
    
 ```python
+# append - add element to list
+print("acronyms now is :")
+print( acronyms)
+print("append -  add element to list - append TBH and BFN")
 acronyms.append('TBH') 
 acronyms.append('BFN') 
 print( acronyms) # ['LOL', 'IDK', 'SMH', 'TBH', 'BFN']
 
-# remove ->  remove element by value
+# remove ->  remove element by value - TBH
+print("------------------------------------")
+print( "acronyms now is : ")
+print( acronyms)
+print("remove -  remove element by value TBH")
 acronyms.remove("TBH")
 print( acronyms) # ['LOL', 'IDK', 'SMH', 'BFN']
 
+print("------------------------------------")
+
+# try removing ele present more than once
+print( acronyms) # ['LOL', 'IDK', 'SMH', 'BFN']
+print( "adding one more IDK")
+acronyms.append('IDK') 
+print("see 2 IDK in the list : " )
+print( acronyms) # ['LOL', 'IDK', 'SMH', 'BFN', 'IDK']
+print( "remove IDK from list")
+acronyms.remove("IDK")
+print( acronyms) #['LOL', 'SMH', 'BFN', 'IDK'] - so first index where value matches is removed
+
+print("------------------------------------")
 # del ->  remove element by index
+print(acronyms) # ['LOL', 'SMH', 'BFN', 'IDK']
+print("del - remove element by index at 2")
 del acronyms[2]
-print( acronyms) # ['LOL', 'IDK', 'BFN']
+print( acronyms) # ['LOL', 'SMH', 'IDK']
+print("------------------------------------")
 
 # Error Cases
 '''
