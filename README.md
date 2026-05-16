@@ -4,7 +4,7 @@
  ## Chapter 01 - Introduction   
  
   <details>
-    <summary>Why Python ?</summary>
+    <summary>Why Python ?</summary>// is the floor division (integer division) operator — it divides and discards the remainder
       <p>  
         1.  Its a **Versatile** programming language.It can be used in :   
           - Data Science
@@ -110,6 +110,7 @@ print("you are " + str(decades) + " decades old.")
 ```python
 user_age= int (input("how old are you \n")) # type 34
 user_decades= user_age // 10
+## Note: // -->  is the floor division (integer division) operator — it divides and discards the remainder so 34 // 10 is not 3.4 but 3
 user_years=   user_age % 10
 print("you are " + str(user_decades) + " decades and " + str(user_years) + " years old") 
 # output - you are 3 decades and 4 years old
