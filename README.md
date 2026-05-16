@@ -14,7 +14,8 @@
         2. Strong Community   
           There is a package for everything
 
-        3. Easy to Learn   
+        3. Other advantages : 
+         - easy to Learn   
           - easy to read
           - concise
           - interpreted language
