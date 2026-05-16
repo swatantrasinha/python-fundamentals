@@ -6,7 +6,7 @@
   <details>
     <summary>Why Python ?</summary>
       <p>  
-        1. **Versatile** programming language.It can be used in :   
+        1.  Its a **Versatile** programming language.It can be used in :   
           - Data Science
           - Machine Learning
           - Web Development
