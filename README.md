@@ -427,10 +427,13 @@ expenses=[]
 
 num_expenses = int(input("Enter number of expenses : "))
 for i in range(num_expenses):
-    expenses.append(float(input("Enter an expense :  \n")))
+    # expns = input("Enter expense number " +  str(i+1) + " :  \n")
+    # expenses.append(float(expns))
+    expenses.append(float(input("Enter expense number " +  str(i+1) + " :  \n"))) # 1 line for above 2 lines
 
 total= sum(expenses)
 print("You spent $", total, sep='')
+
 ```
 
 <details>
