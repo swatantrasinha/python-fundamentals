@@ -1050,6 +1050,24 @@ formatted_price = f"${paycheckRoundOff:.2f}"
 print('formatted_price :' , formatted_price)
 
 print(f'Pay Check:  ${paycheck:,.2f}')
+
+### Other examples
+###########
+value = 961.5
+f"${value:.2f}"    # $961.50  (pads to 2 decimals)
+
+value = 961.5678
+f"${value:.2f}"    # $961.57  (rounds to 2 decimals)
+
+value = 1000
+f"${value:.2f}"    # $1000.00
+
+# Other useful formats
+f"${value:,.2f}"   # $1,000.00  (comma separator)
+f"{value:.0f}"     # 1000       (no decimals)
+f"{value:>10.2f}"  # "   1000.00" (right-aligned, 10 chars wide)
+
+###########
  ```
 
 </details>
